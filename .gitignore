@@ -6,6 +6,11 @@
 *.gen
 *.swp
 
-bin/
-build/
-.settings/
+bin/*
+build/*
+.settings/*
+
+.DS_Store
+
+junit*.properties
+bc-build.properties

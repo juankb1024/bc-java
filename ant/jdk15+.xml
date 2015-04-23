@@ -116,4 +116,15 @@
     <target name="zip-src">
         <ant antfile="ant/bc+-build.xml" dir="." target="zip-src" />
     </target>
+	
+	<!-- ================================= 
+	          target: clean-and-build              
+	         ================================= -->
+	<target name="clean-and-build" depends="clean, build-lw, build-provider, build" description="Shortcut to clean the build folder, build the project"/>
+	
+	<!-- ================================= 
+          target: clean-and-test              
+         ================================= -->
+    <target name="clean-and-test" depends="clean-and-build, test" description="Shortcut to clean the build folder, builds the project and runs tests" />
+
 </project>
