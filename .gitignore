@@ -6,11 +6,12 @@
 *.gen
 *.swp
 
-bin/*
-build/*
 .settings/*
+.svn/*
 
 .DS_Store
-
+.git*
 junit*.properties
 bc-build.properties
+/bin/
+/build/
