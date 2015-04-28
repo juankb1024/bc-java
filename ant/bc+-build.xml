@@ -712,6 +712,7 @@
     </target>
 
     <target name="test-lw">
+    	<mkdir dir="${basedir}/${build.dir}/${target.prefix}"/>
         <junit fork="yes" dir="${basedir}/${build.dir}/${target.prefix}" failureProperty="test.failed">
             <classpath>
                 <fileset dir="${artifacts.jars.dir}">
