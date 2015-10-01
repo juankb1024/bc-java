@@ -94,7 +94,7 @@ class BcImplProvider
         case SymmetricKeyAlgorithmTags.AES_128:
         case SymmetricKeyAlgorithmTags.AES_192:
         case SymmetricKeyAlgorithmTags.AES_256:
-            engine = new AESEngine();
+            engine = new AESFastEngine();
             break;
         case SymmetricKeyAlgorithmTags.CAMELLIA_128:
         case SymmetricKeyAlgorithmTags.CAMELLIA_192:
